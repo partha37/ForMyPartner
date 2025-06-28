@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Memories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Hepta Slab', sans-serif;
+        background: #efecdb;
+        color: #5d4037;
+      }
+
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c0a98f;
+      }
+
+      img {
+        filter: saturate(40%) sepia(30%) hue-rotate(5deg);
+        transition: filter 0.5s ease;
+      }
+
+      a:hover img {
+        filter: none;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen overflow-y-auto p-4">
+
+
+    <div class="flex flex-col items-center space-y-8">
+      <!-- Image Cards -->
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/1.jpg" target="_blank">
+          <img src="images/1.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/2.jpg" target="_blank">
+          <img src="images/2.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/3.jpg" target="_blank">
+          <img src="images/3.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/4.jpg" target="_blank">
+          <img src="images/4.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/5.jpg" target="_blank">
+          <img src="images/5.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/6.jpg" target="_blank">
+          <img src="images/6.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+      <div class="shadow-xl p-4 bg-[#efecdb]">
+        <a href="images/7.jpg" target="_blank">
+          <img src="images/7.jpg" alt="" class="max-w-full h-auto rounded-lg" />
+        </a>
+      </div>
+
+
+    </div>
+
+    <a
+      href="srslylastpage.html"
+      class="flex flex-col items-center text-center mb-8 space-y-4"
+    >
+      <p class="text-xl sm:text-2xl md:text-3xl font-medium">
+        some of our memories all together, press to continue....
+      </p>
+      <div class="flex gap-4">
+        <img src="media/boobleft.png" alt="" class="h-12 sm:h-16" />
+        <img src="media/boobright.png" alt="" class="h-12 sm:h-16" />
+      </div>
+    </a>
+  </body>
+</html>

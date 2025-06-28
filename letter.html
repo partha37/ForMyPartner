@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>&lt;3Letter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: 'Poor Story', system-ui;
+        font-weight: 700;
+        color: #ff6;
+        background-color: #000;
+        overflow: hidden;
+      }
+
+      p#start {
+        position: relative;
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 30% auto 0;
+        color: #4ee;
+        opacity: 0;
+        z-index: 1;
+        animation: intro 2s ease-out forwards;
+      }
+
+      @keyframes intro {
+        0% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      h1 {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        font-size: 3rem;
+        text-align: center;
+        color: #000;
+        text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+        opacity: 0;
+        z-index: 1;
+        animation: logo 5s ease-out 2.5s forwards;
+      }
+
+      h1 sub {
+        display: block;
+        font-size: 0.3em;
+        line-height: 0.8em;
+      }
+
+      @keyframes logo {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+      }
+
+      #titles {
+        position: absolute;
+        width: 90%;
+        max-width: 600px;
+        height: 50em;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) perspective(300px) rotateX(5deg);
+        transform-origin: 50% 100%;
+        font-size: 1rem;
+        overflow: hidden;
+      }
+
+      #titles:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 60%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+        pointer-events: none;
+      }
+
+      #titles p {
+        text-align: justify;
+        margin: 0.8em 0;
+      }
+
+      #titles p.center {
+        text-align: center;
+      }
+
+      #titles a {
+        text-decoration: underline;
+        background-color: purple;
+        color: white;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        display: inline-block;
+      }
+
+      #titlecontent {
+        position: absolute;
+        top: 100%;
+        animation: scroll 65s linear 4s forwards;
+      }
+
+@keyframes scroll {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -80%;
+  }
+}
+
+    </style>
+  </head>
+
+  <body class="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+    <p id="start">A short time ago we met and now this&hellip;</p>
+
+    <h1>16th JUNE</h1>
+
+    <div id="titles">
+      <div id="titlecontent">
+        <p class="center">My Dear,<br />Sowjanya</p>
+
+        <p>Lemme gather the courage to say things in front of you!</p>
+
+        <p>As I sit down to write this letter, I'm filled with excitement and nerves, but most of all, with love for you.</p>
+
+        <p>From the moment we met, your beauty and charm captured my heart. Your laughter is contagious, and your kindness knows no bounds.</p>
+
+        <p>But what truly sets you apart is your ability to find joy in every moment. It's just one more reason why I adore you.</p>
+
+        <p>But beyond your outward appearance, it's your inner beauty that truly sets you apart. Your kindness, compassion, and unwavering strength inspire me every single day. You have a heart of gold.</p>
+
+        <p>There's something else too. Your unique ability to find humor and joy in even the simplest moments — including when you're just eating like a hungry kid. Yes, it's true. And it makes you authentic and lovable.</p>
+
+        <p>In you, I've found not only a partner but also a best friend — someone with whom I can share my deepest thoughts, fears, dreams and bad version. Thanks for accepting for who I am, flaws and all.</p>
+
+        <p>So, Sowjanya, I'm laying my heart on the line and thanks for staying in life for now and FOREVER....</p>
+
+        <p class="center">Kutty Pondati</p>
+
+        <p>With all my Kadhal and Anbuden,</p>
+
+        <p>Un Kadhalan, Parthiban (Sowjanya's Husband)</p>
+
+        <p class="center">
+          <a href="choice.html">Click here my Pondati</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
